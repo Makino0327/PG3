@@ -31,10 +31,11 @@ int main() {
 	list<const char*> y2022 = y2019;
 	for (auto itr = y2022.begin(); itr != y2022.end(); ++itr) {
 		if (strcmp(*itr, "Tamachi") == 0) {
-			y2022.insert(next(itr), "Takanawa Gateway");
+			y2022.insert(itr, "Takanawa Gateway");
 			break;
 		}
 	}
+
 
 	SetConsoleOutputCP(65001);
 	// 1970年
